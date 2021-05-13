@@ -8,6 +8,7 @@ font-family: 'Poppins', sans-serif;
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Hind', sans-serif;
   }
   
   body {
@@ -15,4 +16,33 @@ font-family: 'Poppins', sans-serif;
     margin: auto;
   }
 
- 
+.w-grid-item {
+  display: flex;
+  width: 1270px;
+  height: 447px;
+}
+
+.collection-item-text, .collection-item-img {
+  display: flex;
+  width: 620px;
+  height: 447px;
+  object-fit: cover;
+}
+
+.collection-item-text-mini, 
+.collection-item-header, 
+.collection-item-text, 
+.w-grid-item-btn {
+  display: block;
+}
+
+.collection-item-header {
+  font-family: Poppins,sans-serif;
+  font-size: 30px;
+}
+
+.collection-item-img img {
+  display: flex;
+  object-fit: cover;
+}
+
