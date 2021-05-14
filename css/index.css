@@ -18,47 +18,26 @@ font-family: 'Poppins', sans-serif;
 body {
   margin: auto;
 }
-.button {
-  font-family: 'Hind', sans-serif;
-  font-weight: bold;
-  border-radius: 5px;
-  text-transform: uppercase;
-  padding: 15px 25px;
-}
 
-.green {
-  background-color: var(--highlight-text-color);
-  color: var(--main-button-color);
-  border: none;
-}
-
-.green:hover {
-  background-color: var(--main-text-color);
-  transition: 0.3s;
-}
-.white {
-  background-color: var(--main-button-color);
-  color: var(--additional-text-color);
-  border: 1px solid var(--highlight-text-color);
-}
-.white:hover {
-  background-color: var(--highlight-text-color);
-  color: var(--main-button-color);
-}
 .site-logo a img{
   width: 108px;
   height: 32px;
+}
+
+.heading {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
   display: block;
   background-image: url(../img/background-img-start-page.webp);
   background-position: center;
-  background-size: center;
+  background-size: cover;
   min-height: 900px;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
-  padding-left: 40px;
+  padding-left: 60px;
   padding-right: 40px;
 }
 
@@ -66,14 +45,12 @@ header nav a {
   display: block;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   color: var(--main-text-color);
-  text-decoration: none;
+  text-decoration:solid;
 }
 
 @media (min-width: 990px) {
-  main {
-    width: 1200px;
-  }
 
 .heading .logo {
     display: flex;
@@ -111,11 +88,9 @@ header nav a {
   padding-top: 20px;
 }
 
-.button{
-  font-family: 'Hind', sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-}
+
+
+
 
 .w-grid-item {
   display: flex;
@@ -146,4 +121,60 @@ header nav a {
 .collection-item-img img {
   display: flex;
   object-fit: cover;
+}
+
+
+/* Controls */
+
+
+.button {
+  font-family: 'Hind', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0.7em 1.5em;
+  border: 2px solid var(--highlight-text-color);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  color: var(--main-text-color);
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.5s;
+  background-color: transparent;
+}
+
+.button:hover {
+  color:var(--main-button-color);
+  border-color: var(--highlight-text-color);
+  background-color: var(--highlight-text-color);
+  cursor: pointer;
+}
+.green {
+  background-color: var(--highlight-text-color);
+  color: var(--main-button-color);
+}
+.green:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-button-color);
+  border-color: var(--main-text-color);
+}
+.best-selling-button {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  border: 2px solid var(--highlight-text-color);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  color: var(--main-button-color);
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.5s;
+  background-color: var(--highlight-text-color);
+}
+
+.best-selling-button:hover {
+  color:var(--main-button-color);
+  border-color: var(--main-text-color);
+  background-color: var(--main-text-color);
+  cursor: pointer;
 }
