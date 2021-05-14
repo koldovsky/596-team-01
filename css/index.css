@@ -14,13 +14,14 @@ font-family: 'Poppins', sans-serif;
   --white-text-color: #ffffff;
 }
 
-body {
-  margin: auto;
-}
-
 .site-logo a img{
   width: 108px;
   height: 32px;
+}
+
+.heading {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
@@ -33,20 +34,19 @@ header {
   padding-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
+  
 }
 
 header nav a {
   display: block;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   color: var(--main-text-color);
   text-decoration: none;
 }
 
 @media (min-width: 990px) {
-  main {
-    width: 1200px;
-  }
 
 .heading .logo {
     display: flex;
