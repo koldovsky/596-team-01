@@ -9,15 +9,42 @@ font-family: 'Poppins', sans-serif;
   margin: 0;
   font-family: "Poppins", sans-serif;
   --main-text-color: #333333;
-  --green-text-color: #7bb57c;
-  --gray-text-color: #707070;
-  --white-text-color: #ffffff;
+  --highlight-text-color: #7bb57c;
+  --alternative-text-color: #707070;
+  --main-button-color: #ffffff;
+  --additional-text-color: #757171;
 }
 
 body {
   margin: auto;
 }
+.button {
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+}
 
+.green {
+  background-color: var(--highlight-text-color);
+  color: var(--main-button-color);
+  border: none;
+}
+
+.green:hover {
+  background-color: var(--main-text-color);
+  transition: 0.3s;
+}
+.white {
+  background-color: var(--main-button-color);
+  color: var(--additional-text-color);
+  border: 1px solid var(--highlight-text-color);
+}
+.white:hover {
+  background-color: var(--highlight-text-color);
+  color: var(--main-button-color);
+}
 .site-logo a img{
   width: 108px;
   height: 32px;
@@ -76,7 +103,7 @@ header nav a {
   color: var(--main-text-color);
 }
 .start-page h1 span {
-  color: var(--green-text-color);
+  color: var(--highlight-text-color);
 }
 .start-page p {
   color: var(--main-text-color);
