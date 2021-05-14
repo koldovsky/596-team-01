@@ -28,13 +28,12 @@ header {
   display: block;
   background-image: url(../img/background-img-start-page.webp);
   background-position: center;
-  background-size: center;
+  background-size: cover;
   min-height: 900px;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
-  padding-left: 40px;
+  padding-left: 60px;
   padding-right: 40px;
-  
 }
 
 header nav a {
@@ -43,7 +42,7 @@ header nav a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--main-text-color);
-  text-decoration: none;
+  text-decoration:solid;
 }
 
 @media (min-width: 990px) {
@@ -84,11 +83,9 @@ header nav a {
   padding-top: 20px;
 }
 
-.button{
-  font-family: 'Hind', sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-}
+
+
+
 
 .w-grid-item {
   display: flex;
@@ -119,4 +116,52 @@ header nav a {
 .collection-item-img img {
   display: flex;
   object-fit: cover;
+}
+
+
+/* Controls */
+
+
+.button {
+  font-family: 'Hind', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0.7em 1.5em;
+  border: 2px solid var(--green-text-color);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  color: var(--main-text-color);
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.5s;
+  background-color: transparent;
+}
+
+.button:hover {
+  color:var(--white-text-color);
+  border-color: var(--green-text-color);
+  background-color: var(--green-text-color);
+  cursor: pointer;
+}
+
+.best-selling-button {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  border: 2px solid var(--green-text-color);
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  color: var(--white-text-color);
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.5s;
+  background-color: var(--green-text-color);
+}
+
+.best-selling-button:hover {
+  color:var(--white-text-color);
+  border-color: var(--main-text-color);
+  background-color: var(--main-text-color);
+  cursor: pointer;
 }
