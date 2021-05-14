@@ -1,20 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Poppins:wght@400;500;600;700&display=swap%27');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Poppins:wght@400;500;600;700&display=swap%27");
 /* 
 font-family: 'Hind', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 
-
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Hind', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  --main-text-color: #333333;
+  --green-text-color: #7bb57c;
+  --gray-text-color: #707070;
+  --white-text-color: #ffffff;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: block;
+  background-image: url(../img/background-img-start-page.webp);
+  background-position: center;
+  background-size: center;
+  min-height: 900px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header nav a {
+  display: block;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+@media (min-width: 990px) {
+.heading .logo {
+    display: flex;
   }
   
-  body {
-    max-width: 1200px;
-    margin: auto;
+  header nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
   }
+  header nav a {
+    padding-right: 20px;
+  }
+  .header .start-page {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.start-page h1 {
+  font-size: 84px;
+  line-height: 1em;
+  color: var(--main-text-color);
+}
+.start-page h1 span {
+  color: var(--green-text-color);
+}
+.start-page p {
+  color: var(--main-text-color);
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.button{
+  font-family: 'Hind', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
 
 .w-grid-item {
   display: flex;
@@ -22,22 +87,23 @@ font-family: 'Poppins', sans-serif;
   height: 447px;
 }
 
-.collection-item-text, .collection-item-img {
+.collection-item-text,
+.collection-item-img {
   display: flex;
   width: 620px;
   height: 447px;
   object-fit: cover;
 }
 
-.collection-item-text-mini, 
-.collection-item-header, 
-.collection-item-text, 
+.collection-item-text-mini,
+.collection-item-header,
+.collection-item-text,
 .w-grid-item-btn {
   display: block;
 }
 
 .collection-item-header {
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 30px;
 }
 
@@ -45,4 +111,3 @@ font-family: 'Poppins', sans-serif;
   display: flex;
   object-fit: cover;
 }
-
