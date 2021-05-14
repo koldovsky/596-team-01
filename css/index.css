@@ -15,8 +15,12 @@ font-family: 'Poppins', sans-serif;
 }
 
 body {
-  max-width: 1200px;
   margin: auto;
+}
+
+.site-logo a img{
+  width: 108px;
+  height: 32px;
 }
 
 header {
@@ -40,6 +44,10 @@ header nav a {
 }
 
 @media (min-width: 990px) {
+  main {
+    width: 1200px;
+  }
+
 .heading .logo {
     display: flex;
   }
@@ -60,6 +68,7 @@ header nav a {
     justify-content: center;
   }
 }
+
 
 .start-page h1 {
   font-size: 84px;
