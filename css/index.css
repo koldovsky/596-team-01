@@ -178,3 +178,50 @@ header nav a {
   background-color: var(--main-text-color);
   cursor: pointer;
 }
+
+/* Spring collection */
+
+.spring-header {
+  display: block;
+  background-image: url(../img/background_spring.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 725px;
+  padding-top: 40px;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
+.spring-collection-text h1 {
+  font-size: 84px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: var(--main-text-color);
+}
+
+.spring-collection-text h1 #year {
+  color: var(--highlight-text-color);
+}
+
+.spring-collection-text p {
+  color: var(--main-text-color);
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+}
+.section-1, .section-2 {
+  display: block;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+.section-2 button:hover {
+  background-color: var(--main-button-color);
+  color: var(--main-text-color);
+}
+
+
