@@ -88,9 +88,66 @@ header nav a {
   padding-top: 20px;
 }
 
+.w-section-inner {
+  background-color: #F7F5F6;
+  margin: auto;
+}
 
+.w-grid-slider {
+  display: flex;
+  max-width: 1200px;
+  max-height: 400px;
+  flex-basis: 305px;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
 
+.feedback-panel {
+  display: flex;
+  max-width: 1200px;
+  flex-basis: 425px;
+  margin: auto;
+  justify-content: space-between;
+}
 
+.w-section-header {
+  font-size: 34px;
+}
+
+.w-section-header,
+.w-section-subheading p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.feedback-1, .feedback-2, .feedback-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  margin: 15px;
+}
+
+.feedback-name {
+  font-size: 22px;
+}
+
+.feedback-location {
+  font-size: 14px;
+}
+
+.feedback-text {
+  color: #707070;
+  font-size: 16px;
+}
+
+.img-feedback img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: auto 150px;
+}
 
 .w-grid-item {
   display: flex;
