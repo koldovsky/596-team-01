@@ -96,6 +96,7 @@ header nav a {
   display: flex;
   width: 1270px;
   height: 447px;
+  flex-direction: column;
 }
 
 .collection-item-text,
