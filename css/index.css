@@ -149,7 +149,7 @@ header nav a {
   font-family: 'Hind', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
-  padding: 0.7em 1.5em;
+  padding: 0.9em 1.5em;
   border: 2px solid var(--highlight-text-color);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.5em;
@@ -249,7 +249,7 @@ header nav a {
 .section-1, .section-2 {
   background-position: center;
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-left: 30px;
 }
 .section-1 {
@@ -271,14 +271,15 @@ header nav a {
 .section-2-paragraph-2 {
     font-size: 22px;
     color: var(--main-text-color);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     font-weight: 500;
+}
 
 .section-1-paragraph-3, .section-2-paragraph-3 {
     font-size: 16px;
-    color: var(--alternative-text-color);
-    margin-bottom: 30px;
+    color: var( --alternative-text-color);
+    margin-bottom: 40px;
 }
 
 .section-2-paragraph-1 {
@@ -288,4 +289,18 @@ header nav a {
 }
 .section-2-paragraph-2, .section-2-paragraph-3 {
   color: var(--main-button-color);
+}
+
+#products h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--main-text-color);
+  margin-left: 160px;
+  margin-top: 90px;
+}
+#products p {
+  font-size: 18px;
+  color: var(--main-text-color);
+  margin-left: 160px;
+  margin-top: 20px;
 }
