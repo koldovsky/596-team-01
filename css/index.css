@@ -94,28 +94,45 @@ header nav a {
 
 .w-grid-item {
   display: flex;
-  width: 1270px;
+  max-width: 1200px;
   height: 447px;
-  flex-direction: column;
+  margin: 30px auto;
+  background-color: #ffffff;
 }
 
-.collection-item-text,
-.collection-item-img {
+.w-grid-inner {
+  background-color: #F7F5F6;
+}
+
+.collection-item-text {
   display: flex;
+  padding: 45px;
   width: 620px;
   height: 447px;
+  flex-direction: column;
   object-fit: cover;
 }
 
-.collection-item-text-mini,
-.collection-item-header,
-.collection-item-text,
-.w-grid-item-btn {
-  display: block;
+.collection-item-img {
+  display: flex;
+  width: 620px;
+  height: 420px;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.collection-item-text-mini {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.collection-item-main-text {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .collection-item-header {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
 }
 
