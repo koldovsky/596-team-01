@@ -104,33 +104,29 @@ header nav a {
 
 .w-grid-inner {
   background-color: #F7F5F6;
+  margin: auto;
 }
 
 .collection-item-text {
   display: flex;
-  padding: 45px;
-  max-width: 620px;
+  flex-basis: 620px;
+  padding: 60px;
+  max-width: 1200px;
   max-height: 447px;
   flex-direction: column;
   object-fit: cover;
 }
 
-.text-right {
-  display: block;
-  float: right;  
-}
 
 .collection-item-img {
   display: flex;
-  width: 620px;
+  flex-basis: 620px;
+  max-width: 620px;
   height: 420px;
   flex-direction: column;
   object-fit: cover;
 }
-.img-left {
-  display: block;
-  float: left;
-}
+
 .collection-item-img img {
   width: 100%;
   height: auto;
@@ -140,11 +136,13 @@ header nav a {
 .collection-item-text-mini {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+  max-width: 335px;
 }
 
 .collection-item-main-text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  max-width: 335px;
 }
 
 .collection-item-header {
@@ -157,6 +155,10 @@ header nav a {
   object-fit: cover;
 }
 
+.grid-item-footer {
+  max-height: 500px;
+  background-color: #333333;
+}
 
 /* Controls */
 
