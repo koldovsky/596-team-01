@@ -95,10 +95,12 @@ header nav a {
 .w-grid-item {
   display: flex;
   max-width: 1200px;
-  height: 447px;
+  max-height: 447px;
   margin: 30px auto;
   background-color: #ffffff;
+  object-fit: fill;
 }
+
 
 .w-grid-inner {
   background-color: #F7F5F6;
@@ -107,10 +109,15 @@ header nav a {
 .collection-item-text {
   display: flex;
   padding: 45px;
-  width: 620px;
-  height: 447px;
+  max-width: 620px;
+  max-height: 447px;
   flex-direction: column;
   object-fit: cover;
+}
+
+.text-right {
+  display: block;
+  float: right;  
 }
 
 .collection-item-img {
@@ -119,6 +126,15 @@ header nav a {
   height: 420px;
   flex-direction: column;
   object-fit: cover;
+}
+.img-left {
+  display: block;
+  float: left;
+}
+.collection-item-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .collection-item-text-mini {
