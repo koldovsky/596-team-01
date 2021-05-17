@@ -15,13 +15,14 @@ font-family: 'Poppins', sans-serif;
   --additional-text-color: #757171;
 }
 
-body {
-  margin: auto;
-}
-
-.site-logo a img{
+.site-logo a img {
   width: 108px;
   height: 32px;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
 }
 
 .heading {
@@ -35,10 +36,8 @@ header {
   background-position: center;
   background-size: cover;
   min-height: 900px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 header nav a {
@@ -47,15 +46,17 @@ header nav a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--main-text-color);
-  text-decoration:solid;
+  text-decoration: solid;
+}
+header nav a:hover {
+  color: var(--highlight-text-color);
+
 }
 
 @media (min-width: 990px) {
-
-.heading .logo {
+  .heading .logo {
     display: flex;
   }
-  
   header nav {
     display: flex;
     flex: 1;
@@ -67,25 +68,148 @@ header nav a {
   }
   .header .start-page {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
   }
 }
 
+@media (min-width: 765px) {
+  .promotion-list,
+  .best-selling-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .promotion-list article,
+  .best-selling-list article{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .best-selling-list{
+    grid-gap: 60px;
+  }
+
+}
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 700px;
+}
 
 .start-page h1 {
   font-size: 84px;
   line-height: 1em;
   color: var(--main-text-color);
+  margin-top: 20px;
 }
-.start-page h1 span {
+
+.start-page h1 span, 
+.promotion-list h3 span, 
+#entry-page span {
   color: var(--highlight-text-color);
 }
+
 .start-page p {
   color: var(--main-text-color);
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 80px;
+}
+
+#promotion {
+  margin-top: 150px;
+}
+
+.promotion-list,
+.best-selling-list {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.promotion-list h3,
+.best-selling-list h3 {
+  font-size: 22;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.promotion-list h2 {
+  display: none;
+}
+
+.promotion-list a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Hind', sans-serif;
+  color: var(--main-text-color);
+}
+
+.promotion-list a:hover {
+  text-decoration: underline;
+}
+
+.promotion-list article div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.promotion-list article img,
+.best-selling-list article img {
+  display: block;
+  width: 100%;
+}
+
+#entry-page h1{
+  font-size: 84px;
+  line-height: 1em;
+  color: var(--main-text-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align:center
+}
+
+.best-selling-list{
+  padding-bottom: 70px;
+}
+
+#best-selling h2 {
+  font-size: 34px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Poppins', sans-serif; 
+  padding-bottom: 30px;
+}
+#best-selling h3, 
+h4 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+}
+
+#best-selling h4 {
+color: var(--highlight-text-color);
+padding-bottom: 20px;
+}
+
+#best-selling p{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+.best-selling-list article{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .w-section-inner {
@@ -115,8 +239,7 @@ header nav a {
   font-size: 34px;
 }
 
-.w-section-header,
-.w-section-subheading p {
+.w-section-header, .w-section-subheading p {
   text-align: center;
   margin-top: 30px;
 }
@@ -158,7 +281,6 @@ header nav a {
   object-fit: fill;
 }
 
-
 .w-grid-inner {
   background-color: #F7F5F6;
   margin: auto;
@@ -173,7 +295,6 @@ header nav a {
   flex-direction: column;
   object-fit: cover;
 }
-
 
 .collection-item-img {
   display: flex;
@@ -219,7 +340,6 @@ header nav a {
 
 /* Controls */
 
-
 .button {
   font-family: 'Hind', sans-serif;
   font-size: 11px;
@@ -236,20 +356,23 @@ header nav a {
 }
 
 .button:hover {
-  color:var(--main-button-color);
+  color: var(--main-button-color);
   border-color: var(--highlight-text-color);
   background-color: var(--highlight-text-color);
   cursor: pointer;
 }
+
 .green {
   background-color: var(--highlight-text-color);
   color: var(--main-button-color);
 }
+
 .green:hover {
   background-color: var(--main-text-color);
   color: var(--main-button-color);
   border-color: var(--main-text-color);
 }
+
 .best-selling-button {
   font-family: 'Hind', sans-serif;
   font-size: 14px;
@@ -263,16 +386,18 @@ header nav a {
   text-align: center;
   transition: color 0.5s;
   background-color: var(--highlight-text-color);
+  margin-top: 80px;
 }
 
 .best-selling-button:hover {
-  color:var(--main-button-color);
+  color: var(--main-button-color);
   border-color: var(--main-text-color);
   background-color: var(--main-text-color);
   cursor: pointer;
 }
 
 /* Spring collection */
+
 #up {
   position: fixed;
   bottom: 50px;
@@ -321,40 +446,45 @@ header nav a {
   max-width: 1100px;
   min-height: 365px;
 }
+
 .section-1, .section-2 {
   background-position: center;
   background-size: cover;
   padding-top: 50px;
   padding-left: 30px;
 }
+
 .section-1 {
   background-image: url(../img/section1.png);
 }
+
 .section-2 {
   background-image: url(../img/section2.png);
 }
+
 .section-2 button:hover {
   background-color: var(--main-button-color);
   color: var(--main-text-color);
 }
+
 .section-1-paragraph-1 {
   font-size: 14px;
   color: #2C2C2C;
   font-weight: 500;
 }
-.section-1-paragraph-2,
-.section-2-paragraph-2 {
-    font-size: 22px;
-    color: var(--main-text-color);
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-weight: 500;
+
+.section-1-paragraph-2, .section-2-paragraph-2 {
+  font-size: 22px;
+  color: var(--main-text-color);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 .section-1-paragraph-3, .section-2-paragraph-3 {
-    font-size: 16px;
-    color: var( --alternative-text-color);
-    margin-bottom: 40px;
+  font-size: 16px;
+  color: var( --alternative-text-color);
+  margin-bottom: 40px;
 }
 
 .section-2-paragraph-1 {
@@ -362,6 +492,7 @@ header nav a {
   font-weight: 500;
   color: #A9A9A9;
 }
+
 .section-2-paragraph-2, .section-2-paragraph-3 {
   color: var(--main-button-color);
 }
@@ -373,6 +504,7 @@ header nav a {
   margin-left: 160px;
   margin-top: 90px;
 }
+
 #products p {
   font-size: 18px;
   color: var(--main-text-color);
