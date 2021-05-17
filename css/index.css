@@ -20,13 +20,16 @@ font-family: 'Poppins', sans-serif;
   height: 32px;
 }
 
-main {
+body {
   /* max-width: 1400px; */
   margin: auto;
 }
 
-.heading {
-  max-width: 1400px;
+.header, 
+.promotion-list,
+.best-selling-list,
+.heading{
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -35,7 +38,7 @@ header {
   background-image: url(../img/background-img-start-page.webp);
   background-position: center;
   background-size: cover;
-  min-height: 900px;
+  min-height: 800px;
   padding-top: 30px;
   padding-left: 30px;
 }
