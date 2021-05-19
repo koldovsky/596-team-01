@@ -15,7 +15,12 @@ font-family: 'Poppins', sans-serif;
   --additional-text-color: #757171;
 }
 
+.site-logo {
+  padding-top: 10px;
+}
+
 .site-logo a img {
+  padding-top: 7px;
   width: 108px;
   height: 32px;
 }
@@ -25,10 +30,7 @@ body {
   margin: auto;
 }
 
-.header, 
-.promotion-list,
-.best-selling-list,
-.heading{
+.header, .promotion-list, .best-selling-list, .heading {
   max-width: 1200px;
   margin: auto;
 }
@@ -38,7 +40,7 @@ header {
   background-image: url(../img/background-img-start-page.webp);
   background-position: center;
   background-size: cover;
-  min-height: 800px;
+  min-height: 860px;
   padding-top: 30px;
   padding-left: 30px;
 }
@@ -51,9 +53,9 @@ header nav a {
   color: var(--main-text-color);
   text-decoration: solid;
 }
+
 header nav a:hover {
   color: var(--highlight-text-color);
-
 }
 
 @media (min-width: 990px) {
@@ -78,23 +80,18 @@ header nav a:hover {
 }
 
 @media (min-width: 765px) {
-  .promotion-list,
-  .best-selling-list{
+  .promotion-list, .best-selling-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-
-  .promotion-list article,
-  .best-selling-list article{
+  .promotion-list article, .best-selling-list article {
     display: flex;
     flex-direction: column;
   }
-
-  .best-selling-list{
+  .best-selling-list {
     grid-gap: 60px;
   }
-
 }
 
 .start-page {
@@ -102,46 +99,44 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
+  padding-top: 70px;
 }
 
 .start-page h1 {
   font-size: 84px;
   line-height: 1em;
   color: var(--main-text-color);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.start-page h1 span, 
-.promotion-list h3 span, 
-#entry-page span {
+.start-page h1 span, .promotion-list h3 span, #entry-page span {
   color: var(--highlight-text-color);
 }
 
 .start-page p {
   color: var(--main-text-color);
   font-size: 18px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 #promotion {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
-.promotion-list,
-.best-selling-list {
+.promotion-list, .best-selling-list {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.promotion-list h3,
-.best-selling-list h3 {
-  font-size: 22;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .promotion-list h2 {
   display: none;
+}
+
+.promotion-list h3, .best-selling-list h3 {
+  font-size: 22;
+  font-weight: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .promotion-list a {
@@ -149,6 +144,7 @@ header nav a:hover {
   font-size: 12px;
   font-family: 'Hind', sans-serif;
   color: var(--main-text-color);
+  padding-bottom: 100px;
 }
 
 .promotion-list a:hover {
@@ -161,55 +157,58 @@ header nav a:hover {
   align-content: space-around;
 }
 
-.promotion-list article img,
-.best-selling-list article img {
+.promotion-list article img, .best-selling-list article img {
   display: block;
   width: 100%;
 }
 
-#entry-page h1{
+#entry-page {
+  background-image: url(../img/background-dot.webp);
+  background-size: auto;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+#entry-page h1 {
   font-size: 84px;
   line-height: 1em;
   color: var(--main-text-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align:center
+  text-align: center;
 }
 
-.best-selling-list{
+.best-selling-list {
   padding-bottom: 70px;
 }
 
 #best-selling h2 {
   font-size: 34px;
   text-align: center;
-  padding-top: 30px;
-  font-family: 'Poppins', sans-serif; 
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
   padding-bottom: 30px;
 }
-#best-selling h3, 
-h4 {
+
+#best-selling h3, h4 {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
 #best-selling h4 {
-color: var(--highlight-text-color);
-padding-bottom: 20px;
+  color: var(--highlight-text-color);
+  padding-bottom: 20px;
 }
 
-#best-selling p{
+#best-selling p {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   padding-bottom: 30px;
 }
 
-
-.best-selling-list article{
+.best-selling-list article {
   display: flex;
-  flex:1;
+  flex: 1;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -347,11 +346,11 @@ padding-bottom: 20px;
   font-family: 'Hind', sans-serif;
   font-size: 11px;
   text-transform: uppercase;
-  padding: 0.9em 1.5em;
+  padding: 1em 2em;
   border: 2px solid var(--highlight-text-color);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.5em;
-  color: var(--main-text-color);
+  color: var(--additional-text-color);
   text-decoration: none;
   text-align: center;
   transition: color 0.5s;
@@ -380,9 +379,9 @@ padding-bottom: 20px;
   font-family: 'Hind', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 1em 3em;
+  padding: 1em 1em;
   border: 2px solid var(--highlight-text-color);
-  margin: 0 0.3em 0.3em 0;
+  margin: 0 0.2em 0.2em 0;
   border-radius: 0.5em;
   color: var(--main-button-color);
   text-decoration: none;
