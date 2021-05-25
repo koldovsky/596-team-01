@@ -216,17 +216,36 @@ header nav a {
   background-size: cover;
   min-height: 700px;
   padding-top: 140px;
-  padding-left: 100px;
+  padding-left: 20px;
   margin-bottom: 90px;
+}
+@media (min-width: 768px) and (max-width: 989px) {
+.spring-header {
+  padding-left: 30px;
+  }
+}
+@media (min-width: 990px) {
+  .spring-header {
+    padding-left: 40px;
+  }
 }
 
 .spring-collection-text h1 {
-  font-size: 84px;
+  font-size: 58px;
   font-weight: bold;
   line-height: 1.1;
   color: var(--main-text-color);
 }
-
+@media (min-width: 768px) and (max-width: 989px) {
+.spring-collection-text h1 {
+  font-size: 71px;
+  }
+}
+@media (min-width: 990px) {
+.spring-collection-text h1 {
+  font-size: 84px;
+  }
+}
 .spring-collection-text h1 #year {
   color: var(--highlight-text-color);
 }
@@ -241,16 +260,17 @@ header nav a {
 .sections {
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(2, 535px);
-  grid-column-gap: 30px;
-  max-width: 1100px;
-  min-height: 365px;
+  /* grid-template-columns: repeat(2, 535px);
+  grid-column-gap: 30px; */
+  /* max-width: 1100px; */
+  min-width: 320px;
 }
 .section-1, .section-2 {
   background-position: center;
   background-size: cover;
   padding-top: 50px;
   padding-left: 30px;
+  width: 100%;
 }
 .section-1 {
   background-image: url(../img/section1.png);
