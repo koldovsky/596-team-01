@@ -13,6 +13,8 @@ font-family: 'Poppins', sans-serif;
   --alternative-text-color: #707070;
   --main-button-color: #ffffff;
   --additional-text-color: #757171;
+  --out-of-stock-background-color: #ffddd9;
+  --out-of-stock-text-color: #cc3833;
 }
 
 .site-logo {
@@ -524,16 +526,91 @@ header nav a:hover {
 }
 
 #products h2 {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--main-text-color);
-  margin-left: 160px;
-  margin-top: 90px;
+  margin-left: 25px;
+  margin-top: 80px;
 }
 
 #products p {
   font-size: 18px;
   color: var(--main-text-color);
-  margin-left: 160px;
+  margin-left: 25px;
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 10px; */
+  order: 0;
+  white-space: nowrap;
+  background-color: transparent;
+}
+.tabs>a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 10px;
+  margin-left: 30px;
+  text-align: center;
+  color: var(--alternative-text-color);
+  font-size: 18px;
+}
+.tabs>a:hover, .tabs>a.active {
+  color: var(--main-text-color);
+}
+.products-list {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.products-list article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.products-list img {
+  display: block;
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+.products-list article p {
+  font-size: 18px;
+  color: var(--main-text-color);
+  padding-bottom: 10px;
+  font-weight: 500px;
+  margin-top: 20px;
+}
+.products-list article p.price {
+  color: var(--highlight-text-color);
+  font-weight: bold;
+  margin-top: 0;
+}
+.products-list article button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.out-of-stock {
+  /* position: relative; */
+}
+
+.out-of-stock span {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  min-width: 260px;
+  background-color: var(--out-of-stock-background-color);
+  color: var(--out-of-stock-text-color);
+  padding: 5px 10px;
+  margin-top: -10px;
+  margin-left: -25px;
+  margin-right: -25px;
+  justify-content: center;
 }
