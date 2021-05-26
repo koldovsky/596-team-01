@@ -462,18 +462,22 @@ header nav a:hover {
 .sections {
   display: grid;
   margin: auto;
-  /* grid-template-columns: repeat(2, 535px);
-  grid-column-gap: 30px; */
-  /* max-width: 1100px; */
-  min-width: 320px;
+  grid-template-columns: repeat(2, 535px);
+  grid-column-gap: 30px;
+  max-width: 1100px;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .section-1, .section-2 {
   background-position: center;
   background-size: cover;
+  padding: 40px 25px;
   padding-top: 50px;
   padding-left: 30px;
-  width: 100%;
+  height: auto;
+  word-wrap: break-word;
 }
 
 .section-1 {
