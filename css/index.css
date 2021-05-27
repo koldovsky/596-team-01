@@ -704,4 +704,13 @@ header nav a:hover {
   .w-section-inner-form {
     max-width: 1200px;
     margin: auto;
+    display: flex;
+  }
+
+  .w-grid-item-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    object-fit: cover;
+
   }
