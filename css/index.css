@@ -9,12 +9,14 @@ font-family: 'Poppins', sans-serif;
   margin: 0;
   font-family: "Poppins", sans-serif;
   --main-text-color: #333333;
-  --highlight-text-color: #7bb57c;
+  --highlight-text-color: #7bb57c; 
   --alternative-text-color: #707070;
   --main-button-color: #ffffff;
   --additional-text-color: #757171;
   --out-of-stock-background-color: #ffddd9;
   --out-of-stock-text-color: #cc3833;
+  --non-active-color: #A9A9A9;
+  --ultra-darck-color: #2C2C2C;
 }
 
 .site-logo {
@@ -427,7 +429,7 @@ header nav a:hover {
   padding-left: 20px;
   margin-bottom: 90px;
 }
-@media (min-width: 768px) and (max-width: 989px) {
+@media (min-width: 765px){
 .spring-header {
   padding-left: 30px;
   }
@@ -444,7 +446,7 @@ header nav a:hover {
   line-height: 1.1;
   color: var(--main-text-color);
 }
-@media (min-width: 768px) and (max-width: 989px) {
+@media (min-width: 765px){
 .spring-collection-text h1 {
   font-size: 71px;
   }
@@ -501,7 +503,7 @@ header nav a:hover {
 
 .section-1-paragraph-1 {
   font-size: 14px;
-  color: #2C2C2C;
+  color: var(--ultra-darck-color);
   font-weight: 500;
 }
 
@@ -522,7 +524,7 @@ header nav a:hover {
 .section-2-paragraph-1 {
   font-size: 14px;
   font-weight: 500;
-  color: #A9A9A9;
+  color: var(--non-active-color);
 }
 
 .section-2-paragraph-2, .section-2-paragraph-3 {
@@ -536,6 +538,17 @@ header nav a:hover {
   margin-left: 25px;
   margin-top: 80px;
 }
+@media (min-width: 765px) {
+  #products h2 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 990px) {
+  #products h2 {
+    font-size: 38px;
+  }
+}
 
 #products p {
   font-size: 18px;
@@ -547,13 +560,14 @@ header nav a:hover {
 
 .tabs {
   display: flex;
-  width: 100%;
+  width: 94%;
   overflow-x: auto;
   overflow-y: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-bottom: 10px; */
-  order: 0;
+  border-bottom: 1px solid;
+  border-color: var(--non-active-color);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  /* order: 0; */
   white-space: nowrap;
   background-color: transparent;
 }
@@ -561,17 +575,18 @@ header nav a:hover {
   display: inline-block;
   text-decoration: none;
   padding: 20px 10px;
-  margin-left: 30px;
+  margin-left: 10px;
   text-align: center;
-  color: var(--alternative-text-color);
+  color: var(--non-active-color);
   font-size: 18px;
 }
 .tabs>a:hover, .tabs>a.active {
   color: var(--main-text-color);
 }
+
 .products-list {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .products-list article {
   display: flex;
@@ -583,7 +598,6 @@ header nav a:hover {
 .products-list img {
   display: block;
   width: 100%;
-  /* margin-bottom: 20px; */
 }
 .products-list article p {
   font-size: 18px;
@@ -591,6 +605,7 @@ header nav a:hover {
   padding-bottom: 10px;
   font-weight: 500px;
   margin-top: 20px;
+  text-align: center;
 }
 .products-list article p.price {
   color: var(--highlight-text-color);
@@ -601,20 +616,38 @@ header nav a:hover {
   margin-top: 10px;
   margin-bottom: 50px;
 }
-.out-of-stock {
-  /* position: relative; */
+.products-list article .out-of-stock {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background-color: var(--out-of-stock-background-color);
+  margin: 0;
+  margin-top: -31px;
+}
+.products-list article .out-of-stock p {
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: var(--out-of-stock-text-color);
+}
+@media (min-width: 765px) {
+  .products-list {
+   display: grid;
+   column-gap: 50px;
+   grid-template-columns: 1fr 1fr;
+   padding-right: 20px;
+  }
+  .products-list img {
+    width:  90%;
+  }
 }
 
-.out-of-stock span {
-  display: flex;
-  position: relative;
-  z-index: 2;
-  min-width: 260px;
-  background-color: var(--out-of-stock-background-color);
-  color: var(--out-of-stock-text-color);
-  padding: 5px 10px;
-  margin-top: -10px;
-  margin-left: -25px;
-  margin-right: -25px;
-  justify-content: center;
+@media (min-width: 990px) {
+  .products-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   .products-list article p {
+     font-size: 20px;
+   }
 }
