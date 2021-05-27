@@ -419,7 +419,7 @@ header nav a:hover {
 
 .spring-header {
   display: block;
-  background-image: url(../img/background_spring.png);
+  background-image: url(../img/spring_collection.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -468,10 +468,7 @@ header nav a:hover {
 }
 
 .sections {
-  display: grid;
   margin: auto;
-  grid-template-columns: repeat(2, 535px);
-  grid-column-gap: 30px;
   max-width: 1100px;
   height: auto;
   padding-left: 25px;
@@ -479,6 +476,8 @@ header nav a:hover {
 }
 
 .section-1, .section-2 {
+  display: flex;
+  flex-direction: column;
   background-position: center;
   background-size: cover;
   padding: 40px 25px;
@@ -489,11 +488,12 @@ header nav a:hover {
 }
 
 .section-1 {
-  background-image: url(../img/section1.png);
+  margin-bottom: 50px;
+  background-image: url(../img/colorful_sale.png);
 }
 
 .section-2 {
-  background-image: url(../img/section2.png);
+  background-image: url(../img/only_black.png);
 }
 
 .section-2 button:hover {
@@ -530,6 +530,18 @@ header nav a:hover {
 .section-2-paragraph-2, .section-2-paragraph-3 {
   color: var(--main-button-color);
 }
+
+@media (min-width: 765px) {
+  .sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .section-1 {
+    margin-bottom: 0;
+  }
+}
+
 
 #products h2 {
   font-size: 30px;
@@ -587,6 +599,10 @@ header nav a:hover {
 .products-list {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.products-list .active-tab {
+  z-index: 1;
 }
 .products-list article {
   display: flex;
