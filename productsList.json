@@ -1,0 +1,86 @@
+[
+    {
+        "id": "a1",
+        "image": "fusion_armchair.png",
+        "alt": "Fusion armchair",
+        "title": "Fusion armchair, LEXX",
+        "price": "320,00USD"
+    },
+    {
+        "id": "a2",
+        "image": "aurora_armchair.png",
+        "alt": "Aurora armchair",
+        "title": "Aurora armchair, MDS",
+        "price": "210,00USD"
+    },
+    {
+        "id": "a3",
+        "image": "cloud_armchair.png",
+        "alt": "Cloud armchair",
+        "title": "Cloud armchair, DIX",
+        "price": "150,00USD"
+    },
+    {
+        "id": "a4",
+        "image": "jeanine_armchair.png",
+        "alt": "Jeanine armchair",
+        "title": "Jeanine armchair, KUKO",
+        "price": "210,00USD"
+    },
+    {
+        "id": "l1",
+        "image": "3-piece_minimal.png",
+        "alt": "3-piece minimal",
+        "title": "3-piece minimal, ARM",
+        "price": "110,00USD"
+    },
+    {
+        "id": "l2",
+        "image": "red_drops.png",
+        "alt": "Red Drops",
+        "title": "Red Drops, KUKO",
+        "price": "210,00USD"
+    },
+    {
+        "id": "l3",
+        "image": "delar.png",
+        "alt": "Delar",
+        "title": "Delar, Uni Studio",
+        "price": "350,00USD"
+    },
+    {
+        "id": "l4",
+        "image": "bubbles.png",
+        "alt": "Bubbles",
+        "title": "Bubbles, Udion",
+        "price": "410,00USD"
+    },
+    {
+        "id": "t1",
+        "image": "upi_table.png",
+        "alt": "Upi table",
+        "title": "Upi table, Landstrom",
+        "price": "90,00USD"
+    },
+    {
+        "id": "t2",
+        "image": "monica_table.png",
+        "alt": "Monica table",
+        "title": "Monica table, Orro",
+        "price": "110,00USD"
+    },
+    {
+        "id": "t3",
+        "image": "snitch_cabinet.png",
+        "alt": "Snitch cabinet",
+        "title": "Snitch cabinet, ARM",
+        "price": "100,00USD"
+    },
+    {
+        "id": "t4",
+        "image": "hugo_table.png",
+        "alt": "Upi table",
+        "title": "Upi table, Landstrom",
+        "price": "99,00USD"
+    }
+]
