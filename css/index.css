@@ -223,6 +223,11 @@ header nav a:hover {
   margin: auto;
 }
 
+.form-background {
+  background-color: #ffffff;
+  margin: 100px;
+}
+
 .w-grid-slider {
   display: grid;
   max-width: 1200px;
@@ -289,7 +294,19 @@ header nav a:hover {
   margin: 30px auto;
   background-color: #ffffff;
   object-fit: fill;
-}
+} 
+
+/* .w-grid-item {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  max-width: 1200px;
+  max-height: 447px;
+  background-color: #ffffff;
+} */
+
+
 
 .w-grid-inner {
   background-color: #F7F5F6;
@@ -651,3 +668,24 @@ header nav a:hover {
      font-size: 20px;
    }
 }
+
+  .w-grid-item-form {
+    display: flex;
+    background-color: #F7F5F6;
+    width: 545px;
+    height: 805px;
+    align-items: center;
+  }
+
+  .form-field .form-email .form-text-area {
+    max-width: 365px;
+    max-height: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .w-section-inner-form {
+    max-width: 1200px;
+    margin: auto;
+  }
