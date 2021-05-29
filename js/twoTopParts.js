@@ -5,7 +5,7 @@ function renderProducts() {
     const promotionalProductsPart = document.querySelector(".promotion-list");
     let html = "";
     for (const product of productsList) {
-        if (product.id === "promotionalProducts") {
+        if (product.category === "promotionalProducts") {
             html += `<article>
                     <div>
                       <img src="img/${product.image}" alt="${product.alt}">
@@ -23,7 +23,7 @@ function renderBestSellingProducts(products) {
     const bestSellingListPart = document.querySelector(".best-selling-list");
     let html = "";
     for (const product of productsList) {
-        if (product.id === "bestSellingProducts"){
+        if (product.category === "bestSellingProducts"){
                  html += `
                 <article>
                     <img src="img/${product.image}" alt="${product.alt}">
@@ -38,7 +38,7 @@ function renderBestSellingProducts(products) {
 }
 
 async function fetchProducts() {
-    const response = await fetch('productsBaseLevitin.json');
+    const response = await fetch('productsForTwoTopParts.json');
     productsList = await response.json();
     renderProducts();
     renderBestSellingProducts();

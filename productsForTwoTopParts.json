@@ -1,38 +1,44 @@
 [
     {
-        "id": "promotionalProducts",
+        "id": "1",
+        "category": "promotionalProducts",
         "image": "green-bed.png",
         "alt": "Green Bed - photo",
         "title": "<span><b>15% off </b></span>on Tables & Cabinets"
     },
     {
-        "id": "promotionalProducts",
+        "id": "2",
+        "category": "promotionalProducts",
         "image": "window_with_sofa.webp",
         "alt": "Window with sofa - photo",
         "title": "All-White Collection in Store"
     },
     {
-        "id": "promotionalProducts",
+        "id": "3",
+        "category": "promotionalProducts",
         "image": "yellow_chear.webp",
         "alt": "Yellow chear - photo",
         "title": "<span><b>NEW! </b></span>Modern Collection by ARM"
     },
     {
-        "id": "bestSellingProducts",
+        "id": "4",
+        "category": "bestSellingProducts",
         "image": "best_selling_white_chear.png",
         "alt": "White chear - photo",
         "title": "Lord armchair, Miedel Home",
         "price": "120.00USD"
     },
     {
-        "id": "bestSellingProducts",
+        "id": "5",
+        "category": "bestSellingProducts",
         "image": "best_selling_green_chear.png",
         "alt": "Green chear - photo",
         "title": "Ultimate Green chair, XODO",
         "price": "90.00USD"
     },
     {
-        "id": "bestSellingProducts",
+        "id": "6",
+        "category": "bestSellingProducts",
         "image": "best_selling_pink_chear.png",
         "alt": "Valetta armchear - photo",
         "title": "Valetta armchair, ZIX studio",
