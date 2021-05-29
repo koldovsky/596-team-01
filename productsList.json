@@ -1,86 +1,98 @@
 [
     {
-        "id": "a1",
+        "id": "1",
+        "category": "armchairs",
         "image": "fusion_armchair.png",
-        "alt": "Fusion armchair",
         "title": "Fusion armchair, LEXX",
-        "price": "320,00USD"
+        "price": 320,
+        "quantity": 10
     },
     {
-        "id": "a2",
+        "id": "2",
+        "category": "armchairs",
         "image": "aurora_armchair.png",
-        "alt": "Aurora armchair",
         "title": "Aurora armchair, MDS",
-        "price": "210,00USD"
+        "price": 210,
+        "quantity": 7
     },
     {
-        "id": "a3",
+        "id": "3",
+        "category": "armchairs",
         "image": "cloud_armchair.png",
-        "alt": "Cloud armchair",
         "title": "Cloud armchair, DIX",
-        "price": "150,00USD"
+        "price": 150,
+        "quantity": 5
     },
     {
-        "id": "a4",
+        "id": "4",
+        "category": "armchairs",
         "image": "jeanine_armchair.png",
-        "alt": "Jeanine armchair",
         "title": "Jeanine armchair, KUKO",
-        "price": "210,00USD"
+        "price": 210,
+        "quantity": 0
     },
     {
-        "id": "l1",
+        "id": "5",
+        "category": "lamps",
         "image": "3-piece_minimal.png",
-        "alt": "3-piece minimal",
         "title": "3-piece minimal, ARM",
-        "price": "110,00USD"
+        "price": 110,
+        "quantity": 3
     },
     {
-        "id": "l2",
+        "id": "6",
+        "category": "lamps",
         "image": "red_drops.png",
-        "alt": "Red Drops",
         "title": "Red Drops, KUKO",
-        "price": "210,00USD"
+        "price": 210,
+        "quantity": 4
     },
     {
-        "id": "l3",
+        "id": "7",
+        "category": "lamps",
         "image": "delar.png",
-        "alt": "Delar",
         "title": "Delar, Uni Studio",
-        "price": "350,00USD"
+        "price": 350,
+        "quantity": 6
     },
     {
-        "id": "l4",
+        "id": "8",
+        "category": "lamps",
         "image": "bubbles.png",
-        "alt": "Bubbles",
         "title": "Bubbles, Udion",
-        "price": "410,00USD"
+        "price": 410,
+        "quantity": 12
     },
     {
-        "id": "t1",
+        "id": "9",
+        "category": "tables",
         "image": "upi_table.png",
-        "alt": "Upi table",
         "title": "Upi table, Landstrom",
-        "price": "90,00USD"
+        "price": 90,
+        "quantity": 1
     },
     {
-        "id": "t2",
+        "id": "10",
+        "category": "tables",
         "image": "monica_table.png",
-        "alt": "Monica table",
         "title": "Monica table, Orro",
-        "price": "110,00USD"
+        "price": 110,
+        "quantity": 9
     },
     {
-        "id": "t3",
+        "id": "11",
+        "category": "tables",
         "image": "snitch_cabinet.png",
-        "alt": "Snitch cabinet",
         "title": "Snitch cabinet, ARM",
-        "price": "100,00USD"
+        "price": 100,
+        "quantity": 10
     },
     {
-        "id": "t4",
+        "id": "12",
+        "category": "tables",
         "image": "hugo_table.png",
-        "alt": "Upi table",
         "title": "Upi table, Landstrom",
-        "price": "99,00USD"
+        "price": 99,
+        "quantity": 5
     }
 ]

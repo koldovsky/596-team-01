@@ -588,6 +588,7 @@ header nav a:hover {
 }
 
 .tabs {
+
   display: flex;
   width: 94%;
   overflow-x: auto;
@@ -598,9 +599,26 @@ header nav a:hover {
   margin-left: 30px;
   /* order: 0; */
   white-space: nowrap;
-  background-color: transparent;
 }
-.tabs>a {
+
+.tabs button {
+  background-color: var(--main-button-color);
+  border: none;
+  color: var(--non-active-color);
+  font-size: 18px;
+  padding: 0 20px 15px 20px;
+}
+
+.tabs button:hover {
+  color: var(--main-text-color);
+}
+
+.tabs button.active {
+  color: var(--main-text-color);
+  border-bottom: 2px solid var(--highlight-text-color);
+}
+
+/* .tabs>a {
   display: inline-block;
   text-decoration: none;
   padding: 20px 10px;
@@ -608,10 +626,11 @@ header nav a:hover {
   text-align: center;
   color: var(--non-active-color);
   font-size: 18px;
-}
-.tabs>a:hover, .tabs>a.active {
+} */
+/* .tabs>a:hover, .tabs>a.active {
   color: var(--main-text-color);
-}
+} */
+
 
 .products-list {
   padding-left: 40px;
