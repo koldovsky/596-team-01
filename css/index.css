@@ -429,7 +429,7 @@ header nav a:hover {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-color: transparent;
+  background-color: var(--main-button-color);
   font-size: 30px;
   border: none;
 }
@@ -441,6 +441,7 @@ header nav a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  /* max-width: 1200px; */
   min-height: 700px;
   padding-top: 140px;
   padding-left: 20px;
