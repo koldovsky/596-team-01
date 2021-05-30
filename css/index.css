@@ -429,9 +429,13 @@ header nav a:hover {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background-color: var(--main-button-color);
+  background-color: transparent;
   font-size: 30px;
   border: none;
+}
+
+#up a {
+  color: var(--non-active-color);
 }
 
 .spring-header {

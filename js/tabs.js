@@ -1,4 +1,3 @@
-let products;
 
 function renderTab(products, category) {
     let html = '';
@@ -7,12 +6,12 @@ function renderTab(products, category) {
       html += `
         <article>
           <img src="img/${product.image}" alt="${product.title}">
-          <article class="out-of-stock"><p>>${product.quantity === 0 ? "Out of stock": ""}</p></article>
           <p>${product.title}</p>
           <p>${product.price} USD</p>
         </article>
       `;
     }
+    
     const productsList = document.querySelector('.products-list');
     productsList.innerHTML = html;
   }
@@ -26,20 +25,18 @@ function renderTab(products, category) {
   document.querySelector('.tab-tables')
           .addEventListener('click', () => renderTab(products, 'tables'));
   
-  // product.className = 'active';
-  // if (product.quantity === 0) {
-  //   productsByCategory.className = 'active';  ;
-  //   }
-  //   productsByCategory.className = ''
-    
-
   function fetchProducts() {
     fetch('productsList.json')
         .then(response => response.json() )
         .then(productsFromServer => products = productsFromServer)
-        .then( () => renderTab() )
+        .then( () => renderTab(products, 'armchairs') ) ;
 }
+let currentTab = 0;
+
+function activeTab() {
+    const activeStyle = document.querySelector('.active');
     
+}
       fetchProducts();
 
-  renderTab(products, 'armchairs');
+  
