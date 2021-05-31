@@ -19,15 +19,19 @@ font-family: 'Poppins', sans-serif;
   --ultra-darck-color: #2C2C2C;
 }
 
-.site-logo {
-  padding-top: 10px;
-  width: 90%;
-  float: left;
+.logo {
+display: flex;
+justify-content: space-between; 
 }
 
 .burger {
-  display: inline-block;
+  margin-right: 40px;
 }
+
+.site-logo {
+  padding-top: 10px;
+}
+
 
 .site-logo a img {
   padding-top: 7px;
@@ -85,10 +89,10 @@ header nav a:hover {
 }
 
 @media (min-width: 765px) {
-  .site-logo {
+  /* .site-logo {
     width: 80%;
     float: left;
-  }
+  } */
 
   header input:checked ~ nav {
     display: block;
