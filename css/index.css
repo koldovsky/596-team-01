@@ -49,6 +49,22 @@ header {
   padding-left: 30px;
 }
 
+header label {
+  font-size: 3.5rem;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+header nav {
+  display: none;
+}
+
+header input:checked ~ nav {
+  display: block;
+}
+
 header nav a {
   display: block;
   font-size: 15px;
@@ -62,7 +78,31 @@ header nav a:hover {
   color: var(--highlight-text-color);
 }
 
+@media (min-width: 765px) {
+  header input:checked ~ nav {
+    display: block;
+  }
+  /* header label {
+    display: none;
+  } */
+  .promotion-list, .best-selling-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .promotion-list article, .best-selling-list article {
+    display: flex;
+    flex-direction: column;
+  }
+  .best-selling-list {
+    grid-gap: 60px;
+  }
+}
+
 @media (min-width: 990px) {
+  header label {
+    display: none;
+  }
   .heading .logo {
     display: flex;
   }
@@ -81,20 +121,10 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
   }
-}
-
-@media (min-width: 765px) {
   .promotion-list, .best-selling-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-  }
-  .promotion-list article, .best-selling-list article {
-    display: flex;
-    flex-direction: column;
-  }
-  .best-selling-list {
-    grid-gap: 60px;
   }
 }
 
@@ -162,7 +192,7 @@ header nav a:hover {
 }
 
 .promotion-list article img, .best-selling-list article img {
-  display: block;
+  /* display: block; */
   width: 100%;
 }
 

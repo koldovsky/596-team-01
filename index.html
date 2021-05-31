@@ -13,9 +13,11 @@
     <header id="home">
         <div class="heading">
             <div class="logo">
-                <div class=site-logo>
-                    <a href="#header"><img src="img/logo.webp" alt="Logo"></a>
-                </div>
+                    <div class=site-logo>
+                        <a href="#header"><img src="img/logo.webp" alt="Logo"></a>
+                    </div>
+                    <label class="burger-icon" for="burger-checkbox">☰</label>
+                    <input type="checkbox" id="burger-checkbox">
                 <nav>
                     <a href="#promotion">Promotion</a>
                     <a href="#best-selling">Best-selling</a>
@@ -29,37 +31,16 @@
                 <h1><span>Furniture</span> for</h1>
                 <h1>Home & Office</h1>
                 <p>500+ models of cushioned furniture, lamps and accessories.</p>
-                <button class="best-selling-button" style="max-width: 300px">Best-selling products - - - <span>&#10145;</span></button>
+                <button class="best-selling-button" style="max-width: 300px">Best-selling products - - -
+                    <span>&#10145;</span></button>
             </div>
         </div>
     </header>
-
     <main id="main">
         <!-- Promotional part-->
         <div id="promotion">
             <div class="promotion-list">
                 <h2>Promotion</h2>
-                <!-- <article>
-                    <div>
-                        <img src="img/green-bed.png" alt="product foto">
-                        <h3><span><b>15% off </b></span>on Tables & Cabinets</h3>
-                        <a href=#>LEARN MORE - - - <span>&#10145;</span></a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="img/window_with_sofa.webp" alt="product foto">
-                        <h3>All-White Collection in Store</h3>
-                        <a href=#>LEARN MORE - - - <span>&#10145;</span></a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="img/yellow_chear.webp" alt="product foto">
-                        <h3><span><b>NEW! </b></span>Modern Collection by ARM</h3>
-                        <a href=#>LEARN MORE - - - <span>&#10145;</span></a>
-                    </div>
-                </article> -->
             </div>
         </div>
 
@@ -68,7 +49,6 @@
             <h1><span>Top Collections</span> of Designer Cushioned Furniture</h1>
             <h1></h1>
         </div>
-
         <!-- Best selling part -->
         <div id="best-selling">
             <div>
@@ -76,27 +56,8 @@
                 <p>Our customers' faves of the week</p>
             </div>
             <div class="best-selling-list">
-                <!-- <article>
-                    <img src="img/best_selling_white_chear.png" alt="product foto">
-                    <h3>Lord armchair, Miedel Home</h3>
-                    <h4>120.00USD</h4>
-                    <button class="button green" style="max-width: 150px">ORDER NOW</button>
-                </article>
-                <article>
-                        <img src="img/best_selling_green_chear.png" alt="product foto">
-                        <h3>Ultimate Green chair, XODO</h3>
-                        <h4>90.00USD</h4>
-                        <button class="button green" style="max-width: 150px">ORDER NOW</button>
-                </article>
-                <article>
-                        <img src="img/best_selling_pink_chear.png" alt="product foto">
-                        <h3>Valetta armchair, ZIX studio</h3>
-                        <h4>310.00USD</h4>
-                        <button class="button green" style="max-width: 150px">ORDER NOW</button>
-                </article> -->
             </div>
         </div>
-
         <div class="spring-collection">
             <div class="spring-header">
                 <article class="spring-collection-text">
@@ -129,7 +90,7 @@
                 <h2>Our Fave Finds</h2>
                 <p>The best designer products from the 2020 collections.</p>
             </div>
-                <section class="products">    
+            <section class="products">
                 <div class="tabs">
                     <button class="tab-armchairs active">Armchairs</button>
                     <button class="tab-lamps">Lamps</button>
@@ -227,28 +188,28 @@
                 <div class="w-section-content-brands">
                     <div class="w-grid-slider">
                         <!-- <div class="w-grid-img"> -->
-                            <img src="img/art-wan.webp" alt="art-wan">
-                        
-                        
-                            <img src="img/idea.webp" alt="idea">
-                        
-                        
-                            <img src="img/ikea.webp" alt="ikea">
-                        
-                        
-                            <img src="img/seamans.webp" alt="seamans">
-                        
-                        
-                            <img src="img/kronhelms.webp" alt="ikea">
-                        
-                        
-                            <img src="img/vitra.webp" alt="vitra">
-                        
-                        
-                            <img src="img/wallmart.webp" alt="wallmart">
-                        </div>
+                        <img src="img/art-wan.webp" alt="art-wan">
+
+
+                        <img src="img/idea.webp" alt="idea">
+
+
+                        <img src="img/ikea.webp" alt="ikea">
+
+
+                        <img src="img/seamans.webp" alt="seamans">
+
+
+                        <img src="img/kronhelms.webp" alt="ikea">
+
+
+                        <img src="img/vitra.webp" alt="vitra">
+
+
+                        <img src="img/wallmart.webp" alt="wallmart">
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="w-section">
@@ -291,7 +252,7 @@
                         </span>
                         <a class="w-grid-item-btn" href="#"><button class="button white">Shop Landstrom</button></a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -354,72 +315,75 @@
     </section>
     <section class="w-section-inner">
         <div class="form-background">
-        <div class="w-section-inner-form">
-            <div class="w-grid-item-form">
-                <form method="POST" class="form-ui-contact" action="https://formspree.io/f/xrgrewdp">
-                    <div class="form-field">
-                        <input type="text" name="form-name" id="form-name" placeholder="Enter your full name*" required>
-                    </div>
-                    <div class="form-field">
-                        <input type="tel" name="form-phone" id="form-phone" placeholder="Enter your phone*" required>
-                    </div>
-                    <div class="form-email">
-                        <input type="email" name="email" id="form-email" placeholder="Enter your e-mail*" required>
-                    </div>
-                    <div class="form-text-area">
-                        <textarea name="textarea" id="form-text-area" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="submit" class="button">
-                        Submit
-                    </button>
-                </form>
-            </div>
-            <div class="w-grid-item-contacts">
-                <h2>Contacts</h2>
-                <p class="feedback-text">
-                    We are always happy to chat with you. Contact us in any convenient way and we will answer all your
-                    questions.
-                </p>
-                <div class="contacts-list">
-                    <div class="contacts-item-1">
-                        <div class="contacts-layout-item-name">
-                            <p>
-                                Adress
-                            </p>
+            <div class="w-section-inner-form">
+                <div class="w-grid-item-form">
+                    <form method="POST" class="form-ui-contact" action="https://formspree.io/f/xrgrewdp">
+                        <div class="form-field">
+                            <input type="text" name="form-name" id="form-name" placeholder="Enter your full name*"
+                                required>
                         </div>
-                        <div class="contacts-layout item definition">
-                            <p>
-                                93-40 Queens Blvd, Flushing,
-                                NY 11374, USA
-                            </p>
+                        <div class="form-field">
+                            <input type="tel" name="form-phone" id="form-phone" placeholder="Enter your phone*"
+                                required>
+                        </div>
+                        <div class="form-email">
+                            <input type="email" name="email" id="form-email" placeholder="Enter your e-mail*" required>
+                        </div>
+                        <div class="form-text-area">
+                            <textarea name="textarea" id="form-text-area" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="button">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+                <div class="w-grid-item-contacts">
+                    <h2>Contacts</h2>
+                    <p class="feedback-text">
+                        We are always happy to chat with you. Contact us in any convenient way and we will answer all
+                        your
+                        questions.
+                    </p>
+                    <div class="contacts-list">
+                        <div class="contacts-item-1">
+                            <div class="contacts-layout-item-name">
+                                <p>
+                                    Adress
+                                </p>
+                            </div>
+                            <div class="contacts-layout item definition">
+                                <p>
+                                    93-40 Queens Blvd, Flushing,
+                                    NY 11374, USA
+                                </p>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="contacts-item-2">
-                        <div class="contacts-layout-item-name">
-                            <p>
-                                Hours
-                            </p>
-                        </div>
-                        <div class="contacts-layout-item-definition">
-                            <p>
-                                Monday - Saturday: 11 AM - 9 PM
-                                Sunday: 11 AM - 7 PM
-                            </p>
+                        <div class="contacts-item-2">
+                            <div class="contacts-layout-item-name">
+                                <p>
+                                    Hours
+                                </p>
+                            </div>
+                            <div class="contacts-layout-item-definition">
+                                <p>
+                                    Monday - Saturday: 11 AM - 9 PM
+                                    Sunday: 11 AM - 7 PM
+                                </p>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="contacts-item-3">
-                        <div class="contacts-layout-item-name">
-                            <p>
-                                Contacts
-                            </p>
-                        </div>
-                        <div class="contacts-layout item definition">
-                            <p>
-                                <a href="tel:+1234567890">+1(234)56 78 90</a>
-                                <a href="mailto:sofa@email.com">sofa@email.com</a>
-                            </p>
+                        <div class="contacts-item-3">
+                            <div class="contacts-layout-item-name">
+                                <p>
+                                    Contacts
+                                </p>
+                            </div>
+                            <div class="contacts-layout item definition">
+                                <p>
+                                    <a href="tel:+1234567890">+1(234)56 78 90</a>
+                                    <a href="mailto:sofa@email.com">sofa@email.com</a>
+                                </p>
 
                             </div>
                         </div>
