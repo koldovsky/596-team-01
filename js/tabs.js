@@ -8,6 +8,7 @@ function renderTab(products, category) {
           <img src="img/${product.image}" alt="${product.title}">
           <p>${product.title}</p>
           <p>${product.price} USD</p>
+          <button class="button">order now</button>
         </article>
       `;
     }
