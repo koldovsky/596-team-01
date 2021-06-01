@@ -17,6 +17,7 @@ font-family: 'Poppins', sans-serif;
   --out-of-stock-text-color: #cc3833;
   --non-active-color: #A9A9A9;
   --ultra-darck-color: #2C2C2C;
+  --form-color: #646464;
 }
 
 .logo {
@@ -787,5 +788,129 @@ header nav a:hover {
     flex-direction: column;
     padding: 60px;
     object-fit: cover;
-
   }
+/* FOOTER */
+footer {
+  display: block;
+  background-color: var(--main-text-color) ;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.footer-container {
+padding: 95px 24px 30px 24px;
+}
+
+.footer-logo {
+  display: block;
+}
+.footer-logo a img {
+  display: block;
+  max-width: 110px;
+  margin: 0 auto;
+}
+
+.footer-logo p {
+  color: var(--main-button-color);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-navigation {
+  display: block;
+  margin: 0 auto;
+}
+ 
+.navigation-centr-part {
+margin: 50px auto;
+}
+
+footer nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-button-color);
+  text-align: center;
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.social-icons p, .form-container p {
+  color: var(--main-button-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+.social-icons nav {
+  text-align: center;
+}
+
+.social-icons nav a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+.footer-forms {
+   border-radius: 10px;
+}
+
+.footer-forms input {
+  width: 100%;
+  height: 55px;
+  background-color: var(--non-active-color);
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.footer-container button {
+  width: 100%;
+  height: 55px;
+  margin-top: 20px;
+}
+
+.after-footer {
+  padding:0 24px 30px 24px;
+}
+
+.after-footer p {
+  color: var(--non-active-color);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.after-footer-text {
+  padding-top: 20px;
+  border-top: 1px solid var(--form-color);
+}
+
+@media (min-width: 765px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+  }
+  .navigation-centr-part {
+    margin: 0 auto;
+  }
+  footer nav a {
+    margin-top: 0;
+  }
+  .form-container {
+    margin-top: 0;
+  }
+  
+}
