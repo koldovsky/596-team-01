@@ -7,6 +7,8 @@
 	<title>Furniture store Website</title>
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -105,10 +107,9 @@
             <button id="up"><a href="#home"><i class="fas fa-chevron-circle-up"></i></a></button>
         </div>
         <section class="w-section">
-            <div class="section-inner-brands">
+            <!-- <div class="section-inner-brands">
                 <div class="w-section-content-brands">
                     <div class="w-grid-slider">
-                        <!-- <div class="w-grid-img"> -->
                         <img src="img/art-wan.webp" alt="art-wan">
 
 
@@ -130,9 +131,27 @@
                         <img src="img/wallmart.webp" alt="wallmart">
                     </div>
                 </div>
+            </div> -->
             </div>
+                    <!--slider start-->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/art-wan.webp" alt="art-wan"></div>
+              <div class="swiper-slide"><img src="img/idea.webp" alt="idea"></div>
+              <div class="swiper-slide"><img src="img/ikea.webp" alt="ikea"></div>
+              <div class="swiper-slide"><img src="img/kronhelms.webp" alt="ikea"></div>
+              <div class="swiper-slide"><img src="img/vitra.webp" alt="vitra"></div>
+              <div class="swiper-slide"><img src="img/wallmart.webp" alt="wallmart"></div>
+              ...
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+
+          </div>
+        <!--slider finish-->
         </section>
+
         <section class="w-section">
             <div class="w-grid-inner">
                 <div class="w-grid-item">
@@ -372,9 +391,12 @@
       </div>
     </footer>
     <script src="https://kit.fontawesome.com/ab2a576c06.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/brandSlider.js"></script>
     <script src="js/twoTopParts.js"></script>
     <script src="js/productsTabs.js"></script>
-    <script src="js/pyatnica.js"></script>
+    
+    
 </body>
 
 </html>

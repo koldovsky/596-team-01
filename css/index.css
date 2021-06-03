@@ -47,6 +47,7 @@ body {
 .header, .promotion-list, .best-selling-list, .heading, .section-inner-brands {
   max-width: 1200px;
   margin: auto;
+  overflow: hidden;
 }
 
 header {
@@ -293,6 +294,10 @@ header nav a:hover {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
   grid-auto-flow: column;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  overflow: hidden;
 }
 
 .w-grid-slider img {
@@ -977,3 +982,22 @@ footer nav a {
   }
   
 }
+
+.swiper-container {
+  width: 1200px;
+  height: 200px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 154px;
+  height: 120px;
+  object-fit: fill;
+  margin: auto;
+  }
+
+  .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
