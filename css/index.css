@@ -273,6 +273,8 @@ header nav a:hover {
 .w-section-inner {
   background-color: #F7F5F6;
   margin: auto;
+  display: block;
+  float: inherit;
 }
 
 .form-background {
@@ -375,6 +377,8 @@ header nav a:hover {
 .w-grid-inner {
   background-color: #F7F5F6;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .collection-item-text {
@@ -856,6 +860,7 @@ header nav a:hover {
   .map-info {
     padding: 30px;
     margin: auto;
+    width: 100%;
   }
 /* FOOTER */
 footer {
@@ -1000,4 +1005,19 @@ footer nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  }
+
+  .w-section {
+    display: block;
+    position: relative;
+  }
+
+  @media (max-width: 765px) {
+    .w-section-inner-form {
+      flex-direction: column;
+    }
+
+    .feedback-panel {
+      flex-direction: column;
+    }
   }
