@@ -355,7 +355,7 @@ header nav a:hover {
 .w-grid-item {
   display: flex;
   max-width: 1200px;
-  max-height: 447px;
+  max-height: 600px;
   margin: 30px auto;
   background-color: #ffffff;
   object-fit: fill;
@@ -384,7 +384,7 @@ header nav a:hover {
 
 .collection-item-text {
   display: flex;
-  flex-basis: 620px;
+  /*flex-basis: 620px;*/
   padding: 60px;
   max-width: 1200px;
   max-height: 447px;
@@ -789,18 +789,9 @@ header nav a:hover {
     padding: 20px;
   }
 
-  .w-grid-item-form {
-    display: flex;
-    background-color: #F7F5F6;
-    max-width: 520px;
-    height: 805px;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
-  }
-
   .w-grid-item-form input {
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     height: 60px;
     background-color: #ffffff;
     margin-top: 20px;
@@ -815,7 +806,8 @@ header nav a:hover {
   }
 
   textarea {
-      width: 400px;
+      max-width: 400px;
+      min-width: 300px;
       height: 300px;
       background-color: #ffffff;
       margin-top: 20px;
@@ -992,6 +984,7 @@ footer nav a {
 .swiper-container {
   width: 1200px;
   height: 200px;
+  width: -webkit-fill-available;
 }
 
 .swiper-slide img {
@@ -1030,12 +1023,20 @@ footer nav a {
     }
 
     .w-grid-item {
-      flex-direction: column;
+      flex-direction: column-reverse;
       max-width: 765;
       max-height: 2500px;
     }
 
     .w-section .w-section-inner {
       max-height: fit-content;
+    }
+
+    .feedback-1, .feedback-2, .feedback-3 {
+      align-items: center;
+    }
+
+    .form-background {
+      margin: 20px;
     }
   }
